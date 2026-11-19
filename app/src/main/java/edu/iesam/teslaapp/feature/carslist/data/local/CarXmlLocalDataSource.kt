@@ -1,7 +1,7 @@
 package edu.iesam.teslaapp.feature.carslist.data.local
 
 import android.content.Context
-import edu.iesam.marvelapp.core.serialization.JsonSerializer
+import edu.iesam.teslaapp.core.serialization.JsonSerializer
 import edu.iesam.teslaapp.R
 import edu.iesam.teslaapp.feature.carslist.domain.Car
 
