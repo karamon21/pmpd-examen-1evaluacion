@@ -11,8 +11,8 @@ activityKtx = "1.13.0"
 constraintlayout = "2.2.2"
 
 ## Versiones de las librerías que voy a necesitar
-mockkv = "1.13.0"
-serialization = "1.14.11"
+mockkv = "1.14.12"
+serialization = "1.13.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }

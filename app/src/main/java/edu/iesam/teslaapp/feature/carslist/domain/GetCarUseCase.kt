@@ -1,7 +1,8 @@
 package edu.iesam.teslaapp.feature.carslist.domain
 
-import edu.iesam.teslaapp.feature.carslist.data.remote.CarApiRemoteDataSource
-
-class GetCarUseCase(private val getCarUseCase: CarApiRemoteDataSource) {
+class GetCarUseCase(private val getSuperHero: CarRepository) {
+    operator fun invoke(): List<Car> {
+        return getSuperHero.obtain()
+    }
 
 }
