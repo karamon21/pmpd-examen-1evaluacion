@@ -9,16 +9,16 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import edu.iesam.teslaapp.R
-import edu.iesam.teslaapp.feature.carslist.data.remote.CarApiRemoteDataSource
 import edu.iesam.teslaapp.feature.carslist.domain.GetCarUseCase
 import edu.iesam.teslaapp.feature.presentation.viewmodel.CarViewModel
 
 
 class CarsListActivity : AppCompatActivity() {
 
+
+    private lateinit var carViewModel: CarViewModel
+
     override fun onCreate(savedInstanceState: Bundle?) {
-
-
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
@@ -27,6 +27,9 @@ class CarsListActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        carViewModel = CarViewModel(
+            GetCarUseCase()
+        )
         initListeners()
     }
 
@@ -41,6 +44,8 @@ class CarsListActivity : AppCompatActivity() {
     private fun buttonFindClicked(carId: String) {
         //el usuario ha pulsado el botón.
         Log.d(CarsListActivity::class.java.simpleName, carId)
+        carViewModel.getCarListViewModel()
+
     }
 
 
