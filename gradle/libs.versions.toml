@@ -10,6 +10,10 @@ material = "1.14.0"
 activityKtx = "1.13.0"
 constraintlayout = "2.2.2"
 
+## Versiones de las librerías que voy a necesitar
+mockkv = "1.13.0"
+serialization = "1.14.11"
+
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
@@ -20,7 +24,10 @@ androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 androidx-activity-ktx = { group = "androidx.activity", name = "activity-ktx", version.ref = "activityKtx" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
-
+## Agrego estas tes librerías por si las necesito más adelante
+kotlin-serialization = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "serialization" }
+mockkAgent = { module = "io.mockk:mockk-agent", version.ref = "mockkv" }
+mockkAndroid = { module = "io.mockk:mockk-agent-android", version.ref = "mockkv" }
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 
