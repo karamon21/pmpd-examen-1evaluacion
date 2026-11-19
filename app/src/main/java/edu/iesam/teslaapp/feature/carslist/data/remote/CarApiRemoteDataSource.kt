@@ -7,12 +7,11 @@ class CarApiRemoteDataSource {
 
     fun getAll(): List<Car> {
         return listOf(
-            Car("1"),
-            Car("2"),
-            Car("3"),
-            Car("4"),
-            Car("5"),
-            Car("6"),
+            Car("1", "Mercedes-AMG", "GT 63 S 4-Door Coupé", "4.0L V8 Biturbo", 198.55),
+            Car("2", "Toyota", "Any Value", "Any Value", 19.000),
+            Car("3", "Tesla", "Model X", "Any Value", 33.000),
+            Car("4", "KIA", "Any Value", "Any Vaue", 25.000),
+            Car("5", "Nissan", "-------", "--------", 5.000)
         )
     }
 

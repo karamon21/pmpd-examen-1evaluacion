@@ -60,24 +60,68 @@
                 tools:layout_editor_absoluteY="-142dp"
                 tools:srcCompat="@drawable/tesla_car" />
 
-            <LinearLayout
+            <TextView
+                android:id="@+id/txMarkCar"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:layout_height="wrap_content"
+                android:text="MARCA" />
 
-                <TextView
-                    android:id="@+id/marca"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="MARCA"
-                    android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Mercedes-AMG"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:text="Mercedes-AMG" />
 
-            </LinearLayout>
+            <TextView
+                android:id="@+id/txModelkCar"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:text="MODELO" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="GT 63 S 4-Door Coupé"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/txMotorkCar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="MOTOR" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="4.0L V8 Biturbo"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/txPriceCar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="PRECIO SUGERIDO" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="€198.500"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
