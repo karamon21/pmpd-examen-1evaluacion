@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="marc_car">Marca del Vehículo</string>
+    <string name="model_car">Modelo del Vehículo</string>
+    <string name="motor_car">Motor del Vehículo</string>
+    <string name="price_car">Precio del Vehículo</string>
+</resources>
